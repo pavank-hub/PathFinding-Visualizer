@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Pathfinding Visualizer</h1>
+    <p>Visualize BFS & DFS Algorithms on a Dynamic Grid</p>
+</header>
+
+<section class="controls">
+
+    <div class="buttons">
+        <button id="startBtn">Set Start</button>
+        <button id="endBtn">Set End</button>
+        <button id="wallBtn">Wall Mode</button>
+        <button id="bfsBtn">Run BFS</button>
+        <button id="dfsBtn">Run DFS</button>
+        <button id="clearBtn">Clear</button>
+    </div>
+
+    <div class="speed-control">
+        <label>Speed:</label>
+        <input type="range" id="speedRange" min="5" max="100" value="30">
+    </div>
+
+</section>
+
+<section id="grid"></section>
+
+<section class="legend">
+    <div><span class="box start"></span> Start</div>
+    <div><span class="box end"></span> End</div>
+    <div><span class="box wall"></span> Wall</div>
+    <div><span class="box visited"></span> Visited</div>
+    <div><span class="box path"></span> Path</div>
+</section>
+
+<footer>
+    <p>Built using HTML, CSS & JavaScript | DSA Visualization Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
